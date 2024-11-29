@@ -28,6 +28,10 @@ Replace the files in the created application with the corresponding files from t
 
 # Notes
 
+This directory contains only the files created or modified in the tutorial. To run an example, place these files in a new Angular project, replacing the corresponding files as needed.
+
+The media files (e.g., images, icons) included in this directory are placeholders used for demonstration purposes. These placeholders represent the visual layout and structure but are not the actual media used in the video tutorial. The placeholder files are stored in the `public/` directory and are referenced in the HTML or CSS code.
+
 The CSS styles are created for educational purposes for the video tutorial. These styles are optimized to minimize the amount of HTML code used, which allows for a simpler and clearer explanation in the tutorial. As a result, some of these styles may introduce unnecessary complexity for real-world projects. This approach helps reduce the number of lines in the HTML templates to make the explanation easier to follow and the visualization simpler.
 
 # MIT License

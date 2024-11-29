@@ -1,0 +1,115 @@
+/*
+The CSS styles in this file are created for educational purposes for the video tutorial. 
+These styles are optimized to minimize the amount of HTML code used, which allows for a simpler 
+and clearer explanation in the tutorial. As a result, some of these styles may introduce unnecessary 
+complexity for real-world projects. This approach helps reduce the number of lines in the HTML templates 
+to make the explanation easier to follow and the visualization simpler.
+*/
+
+body {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Cloud Plans Page Styles */
+app-page {
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Align children vertically in the center */
+    flex-wrap: wrap;
+}
+
+/* Cloud Plan Rectangle Styles */
+app-plan {
+    display: block;
+    margin: 0 10px; /* Spacing between the elements */
+    padding: 15px; /* Padding inside each element */
+    width: 150px; /* Whe width of the Plan */
+    background-color: white; /* Background fill color */
+    border: 2px solid rgb(86,120,185); /* Border */
+    border-radius: 30px; /* Rounded corners with a specific radius */
+    box-shadow: 0px 4px 8px rgba(86, 120, 185, 0.5); /* Shadow with 50% opacity */
+}
+
+app-plan div {
+    display: flex;
+    justify-content: center; /* Center the plans horizontally */
+    align-items: center;
+}
+
+/* Plan Icon Styles */
+app-plan img {
+    display: block; /* Change a icon (img tag) to block-level so it can be centered */
+    margin: 20px auto; /* Horizontally center a icon */
+}
+
+/* Plan Name */
+app-plan .name {
+    font-size: 28px;
+}
+
+/* Plan Storage */
+app-plan .storage {
+    font-size: 36px;
+    color: #009193;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Plan Price */
+app-plan .price {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    color: #1165C1;
+}
+
+/* Plan Mode */
+app-plan .price .mode {
+    display: block;
+    font-size: 28px;
+}
+
+app-page>div:has(input) {
+  width: 100%;
+  margin: 20px auto;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center all children horizontally */
+  align-items: center; /* Align children vertically in the center */
+  gap: 8px; /* Add spacing between "Hourly", the switch, and "Monthly" */
+}
+
+/* Style the toggle switch */
+app-page>div input[type="checkbox"]:first-of-type {
+  appearance: none; /* Remove default checkbox styling */
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 24px; /* Rounded corners for the switch */
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.4s ease;
+}
+
+/* Add the knob inside the toggle switch */
+app-page>div input[type="checkbox"]:first-of-type::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%; /* Make it a circle */
+  top: 3px; /* Position inside the switch */
+  left: 3px; /* Align to the left */
+  transition: transform 0.4s ease;
+}
+
+/* Change the background and knob position when checked */
+app-page>div input[type="checkbox"]:first-of-type:checked {
+  background-color: #2196F3; /* Background color when on */
+}
+
+app-page>div input[type="checkbox"]:first-of-type:checked::before {
+  transform: translateX(26px); /* Move the knob */
+}

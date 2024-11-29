@@ -1,0 +1,5 @@
+<div>Hourly <input type="checkbox" role="switch" (click)="changeMode()"> Monthly</div>
+
+<app-plan [priceMode]="displayMode" name="STARTER" [hourlyPrice]="0.1" [storage]="2"></app-plan>
+<app-plan [priceMode]="displayMode" name="BUSINESS" [hourlyPrice]="0.4" [storage]="10"></app-plan>
+<app-plan [priceMode]="displayMode" name="ENTERPRISE" [hourlyPrice]="1" [storage]="50"></app-plan>

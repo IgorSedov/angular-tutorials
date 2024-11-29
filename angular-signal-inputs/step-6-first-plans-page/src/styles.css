@@ -1,0 +1,51 @@
+body {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+app-page {
+    display: flex; /* Use Flexbox layout */
+    justify-content: center; /* Center the elements horizontally */
+}
+
+app-plan {
+    display: block;
+    margin: 0 10px; /* Spacing between the elements */
+    padding: 15px; /* Padding inside each element */
+    width: 150px; /* Whe width of the rectangle */
+    background-color: white; /* Background fill color */
+    border: 2px solid rgb(86,120,185); /* Border */
+    border-radius: 30px; /* Rounded corners with a specific radius */
+    box-shadow: 0px 4px 8px rgba(86, 120, 185, 0.5); /* Shadow with 50% opacity */
+}
+
+app-plan div {
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center;
+}
+
+.name {
+    font-size: 28px;
+}
+
+.storage {
+    font-size: 36px;
+    color: #009193;
+    margin-top: 120px; /* Temporary indent for the icon in the future */
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex; /* Flexbox layout for the internal content */
+    flex-direction: column; /* Stack children (.mode) vertically */
+    align-items: center; /* Center .mode horizontally */
+    text-align: center; /* Center the text content inside .price */
+    font-size: 36px;
+    color: #1165C1;
+}
+
+.mode {
+    display: block;
+    font-size: 28px;
+}

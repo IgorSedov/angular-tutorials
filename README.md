@@ -6,6 +6,6 @@ The media files (e.g., images, icons) included in this repository are placeholde
 
 For more tutorials, visit my [YouTube channel](https://www.youtube.com/@theigorsedov).
 
-This repository is licensed under the MIT License.
+This repository is licensed under the MIT License. See LICENSE file for details.
 
 For any questions, feel free to reach out to me via [me@igorsedov.com](mailto:me@igorsedov.com).
